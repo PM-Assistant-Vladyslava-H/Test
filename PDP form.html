@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<head>
+    <title>PM_Assistant_Vladyslava_H_task1</title>
+    <meta title="PM_Assistant_Vladyslava_H_task1">
+    <meta name="description" content="PDP task 1">
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Task 1. React MD</h1>
+    <div class="login">
+        <form action="" class="form" id="form">
+            <div class="wrapper">
+            <div class="input-box"> 
+                <label for="fname">Name*</label>
+                <input 
+                    type="text" 
+                    id="fname" 
+                    name="fname" 
+                    placeholder="Name"
+                    minlength="2"
+                    maxlength="128"
+                    required>
+            </div>
+           <div class="input-box"> 
+                <label for="email">Emai*</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Email"
+                    minlength="6"
+                    maxlength="254"
+                    required>
+            </div>
+            <p class="helperText">
+                Enter your email address
+            </p>
+            <div class="input-box"> 
+                <label for="email RFC">Email RFC</label>
+                <input 
+                    type="email" 
+                    id="emailRFC" 
+                    name="emailRFC"
+                    placeholder="Email RFC"
+                    minlength="6"
+                    maxlength="254">
+            </div>
+            <p class="helperText">
+                Enter your email address
+            </p>
+            <div class="input-box"  >   
+                <label for="ID">ID</label>
+                <input 
+                    type="text" 
+                    id="id" 
+                    name="ID"
+                    placeholder="ID"
+                    minlength="2"
+                    maxlength="128">
+                    <p class="helperText">
+                        Use only latin lowercase letters, numbers and "_"
+                    </p>
+            </div>
+           
+            <div class="input-box">
+                <label for="id_">id_</label>
+                <input 
+                    type="text" 
+                    id="id_" 
+                    name="id_" 
+                    placeholder="id_"
+                    minlength="4"
+                    maxlength="128">
+            </div>
+            <p class="helperText">
+                Use only latin lowercase letters, numbers and "_"
+            </p>
+            <div class="input-box">
+                <label for="phone1">Phone*</label>
+                <input 
+                    type="tel" 
+                    id="phone1" 
+                    name="phone1" 
+                    placeholder="+38 (0xx) xxx - xx - xx"
+                    required 
+                    pattern="\+38\s\(0\d{2}\)\s\d{3}\s-\s\d{2}\s-\s\d{2}"
+                    inputmode="tel">
+            </div>
+            <p class="helperText">
+                +380 (xx) xxx - xx - xx
+            </p>
+           <div class="input-box">
+                <label for="phone2">Phone</label>
+                <input 
+                    type="tel" 
+                    id="phone2" 
+                    name="phone2"
+                    placeholder="Additional phone"
+                    minlength="7"
+                    maxlength="256">
+            </div> 
+            <p class="helperText">
+                Several numbers can be entered separated by commas
+            </p>
+            <div class="input-box">
+                <label for="pincode">Pin code</label>
+                <input 
+                    type="text" 
+                    id="pincode" 
+                    name="pincode"
+                    placeholder="Pincode"
+                    maxlength="8">
+            </div>
+            <p class="helperText">
+                Enter your pin code in the format xxxx-xxxx. Use only numbers
+            </p>
+            <div class="input-box">
+                <label for="pincode2">Pin code</label>
+                <input 
+                    type="text" 
+                    id="pincode2" 
+                    name="pincode2"
+                    placeholder="Pincode"
+                    maxlength="8">
+            </div>
+            <p class="helperText">
+                Enter your pin code in the format xxxx-xxxx. Use only numbers
+            </p>
+            <div class="input-box">
+                <label for="description">Description</label>
+                <textarea 
+                    name="description" 
+                    id="description"
+                    placeholder="Description"
+                    rows="7" 
+                    cols="30"
+                    maxlength="500"></textarea>
+            </div>
+            <p class="helperText">
+                Add a short comment
+            </p>
+         </div>
+            <button type="submit" id="send">SEND<br>
+
+        </form>
+        <script defer src="./code.js"></script>
+    </div>
+</body>
+
+</html>
